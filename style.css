@@ -59,6 +59,14 @@
    background-color: darkgray;
  }
 
+ .page-introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
  /* Main content */
  .main-content {
    padding: 20px;
