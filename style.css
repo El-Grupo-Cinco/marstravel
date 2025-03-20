@@ -1,11 +1,12 @@
  /* General Reset */
  @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
+ 
  * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Audiowide';
+   font-family: 'Audiowide', sans-serif; /* Added fallback generic font family */
  }
 
  /* Header Styles */
@@ -84,7 +85,8 @@
 
  /* ------- CARDS ------- */
  .cards {
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
    gap: 20px;
    justify-content: center;
    text-align: center;
@@ -95,11 +97,12 @@
    background: white;
    padding: 20px;
    border-radius: 10px;
-   width: 300px;
+   
  }
 
  .card img {
-   width: 100%;
+   width: 458px;
+   height: 405px;
    border-radius: 10px;
  }
 
