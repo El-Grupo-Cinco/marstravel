@@ -17,6 +17,7 @@
    align-items: center;
    margin-top: 0.25rem;
    background-color: rgb(255, 120, 36);
+   color: white;
    padding: 0.25rem;
  }
 
@@ -38,7 +39,7 @@
 
  .nav-links a {
    margin: 0.25rem;
-   color: black;
+   color: white;
    text-decoration: none;
    font-size: 16px;
  }
@@ -150,7 +151,18 @@
  }
 
 
-
+.activities-nav {
+  margin: 1rem;
+  background: rgb(255, 120, 36);
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+}
 
 
  /* Footer Styles */
