@@ -66,6 +66,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: rgb(255, 120, 36);
  }
 
  /* Main content */
@@ -135,6 +136,10 @@
    gap: 20px;
  }
 
+ .picture-left-text-right-with-small-pix-underneath {
+
+ }
+
  /* ------- RECENSIONER ------- */
  .review-cards {
    display: flex;
@@ -150,16 +155,19 @@
    width: 250px;
  }
 
-
+/* acitvities on mars page*/
 .activities-nav {
-  margin: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
   color: white;
   background: rgb(255, 120, 36);
   ul {
+    height: 3rem;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     gap: 2rem;
   }
 }
@@ -188,6 +196,7 @@
     text-align: center;
     background-color: rgba(255, 120, 36, 0.50);
     border-radius: 3rem;
+    padding: 0.5rem;
     
   }
   h3 {
@@ -206,15 +215,42 @@
     width: 55%;
     height: auto;
   }
-  div {
-    width: 50%;
-    text-align: center;
-    border-radius: 3rem;
-  }
+  
   h3 {
     margin: 0.5rem;
   }
+}
 
+.picture-right-of-text > div {
+  width: 50%;
+  text-align: center;
+  border-radius: 3rem;
+  padding: 0.5rem;
+}
+
+.text-with-picture-underneath{
+  margin-top: auto;
+  width: auto;
+  img {
+    margin-top: 1rem;
+    width: 100%;
+    align-self: flex-end;
+    justify-self: end;
+    margin-bottom: 0;
+  }
+}
+
+#activities-in-town {
+  padding: 1rem;
+  color: rgb(255, 120, 36);
+  display: flex;
+  flex-direction: column;
+  gap: -2rem;
+}
+
+#activities-in-town > div {
+  display: flex;
+  gap: 1rem;
 }
 
 
