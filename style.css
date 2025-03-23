@@ -1,77 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
-  {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Audiowide';
-  }
-  
-  /* Header Styles */
-  header {
+    font-family: 'Audiowide', sans-serif;
+}
+
+/* Header Styles */
+header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     background-color: rgb(255, 120, 36);
     padding: 1rem;
-  }
-  
-  .logo {
+}
+
+.logo {
     font-size: 24px;
     color: black;
     text-decoration: none;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     margin: 0 15px;
     color: black;
     text-decoration: none;
     font-size: 16px;
-  }
-  
-  .order-btn {
+}
+
+/* Fix: Change .order-btn to #order-btn */
+#order-btn {
     background-color: black;
     color: white;
     padding: 10px 20px;
     border: none;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .order-btn:hover {
+}
+
+#order-btn:hover {
     background-color: darkgray;
-  }
-  
-  /* Main content */
-  .main-content {
+}
+
+/* Main content */
+.main-content {
     padding: 20px;
-  }
-  
-  /* Footer Styles */
-  footer {
+}
+
+/* Footer Styles */
+footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
     background-color: rgb(255, 120, 36);
     gap: 1.5rem;
-    text-wrap: nowrap;
-  }
-  
-  footer div {
+    white-space: nowrap; /* Fix */
+}
+
+footer div {
     flex: 1;
-  }
-  
-  footer h2 {
+}
+
+footer h2 {
     margin-bottom: 10px;
-  }
-  
-  footer ul {
+}
+
+footer ul {
     list-style: none;
-  }
-  
-  footer ul li {
+}
+
+footer ul li {
     margin-bottom: 5px;
-  }
-  
+}
