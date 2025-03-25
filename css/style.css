@@ -1,39 +1,35 @@
  /* General Reset */
  @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
- 
+
  * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Audiowide', sans-serif; /* Added fallback generic font family */
+   font-family: 'Audiowide', sans-serif;
+   /* Added fallback generic font family */
  }
 
  /* Header Styles */
  header {
    display: flex;
    justify-content: space-between;
-  /* flex-wrap: wrap; */
+   /* flex-wrap: wrap; */
    align-items: center;
    margin-top: 0.25rem;
    background-color: rgb(255, 120, 36);
    padding: 0.25rem;
  }
 
- #logo {
-   color: black;
-   text-decoration: none;
-   margin-left: 5rem;
- }
-
  #logo img {
+   margin-left: 1rem;
    height: 6rem;
  }
 
  #logo-text {
-  align-items: center;
-  max-width: 80%;
-  height: auto;
+   align-items: center;
+   max-width: 80%;
+   height: auto;
  }
 
  .nav-container {
@@ -73,7 +69,7 @@
 
  /* ------- HERO SEKTION ------- */
  .hero {
-   background: url('./Picture/mars-hero.jpg') no-repeat center center/cover;
+   background: url('/Picture/mars-hero.jpg') no-repeat center center/cover;
    height: 60vh;
    display: flex;
    align-items: center;
@@ -92,7 +88,7 @@
  /* ------- CARDS ------- */
  .cards {
    display: grid;
-   grid-template-columns: repeat(3,1fr);
+   grid-template-columns: repeat(3, 1fr);
    gap: 0px;
    justify-content: center;
    text-align: center;
@@ -103,7 +99,7 @@
    background: white;
    padding: 10px;
    border-radius: 10px;
-   
+
  }
 
  .card img {
