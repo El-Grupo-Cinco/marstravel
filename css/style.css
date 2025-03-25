@@ -121,6 +121,14 @@
    padding: 40px;
  }
 
+.dining-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
  .activities img,
  .mountain img {
    width: 50%;
