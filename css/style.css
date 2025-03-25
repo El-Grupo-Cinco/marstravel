@@ -77,7 +77,7 @@
 
  /* ------- HERO SEKTION ------- */
  .hero {
-   background: url('./Picture/mars-hero.jpg') no-repeat center center/cover;
+   background: url('/Picture/mars-hero.jpg') no-repeat center center/cover;
    height: 60vh;
    display: flex;
    align-items: center;
