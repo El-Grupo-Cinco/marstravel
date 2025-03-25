@@ -53,8 +53,8 @@
    border-radius: 0.5rem;
    font-size: 16px;
    cursor: pointer;
-   margin-left: 3rem;
-   margin-right: 3rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
  }
 
  .order-btn:hover {
