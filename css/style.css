@@ -12,7 +12,7 @@
 
  /* Header Styles */
  header {
-   display: grid;
+   display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
    align-items: center;
@@ -22,19 +22,53 @@
    padding: 0.25rem;
  }
 
- #logo img {
-   margin-left: 1rem;
-   height: 6rem;
+ /* Container for logo and banner */
+ .logo-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+   gap: 1rem;
  }
 
- #header-banner {
-   align-items: center;
-   object-fit: fill;
+ /* Left-side logo */
+ #logo img {
+   max-height: 6rem;
    height: auto;
+   width: auto;
  }
+
+ /* Right-side header banner */
+ #header-banner img {
+   max-height: 6rem;
+   height: auto;
+   width: auto;
+ }
+
+ /* Responsiv anpassning */
+ @media (max-width: 600px) {
+   .logo-container {
+     flex-wrap: nowrap;
+     gap: 0.5rem;
+   }
+
+   #logo img,
+   #header-banner img {
+     max-height: 4rem;
+     /* Skala ner bilderna */
+   }
+ }
+
+ #logo img,
+#header-banner img {
+  max-width: 100%;
+}
+
 
  .nav-container {
-  color: white;
+   color: white;
    display: flex;
    gap: 0.5rem;
    align-items: center;
@@ -97,9 +131,9 @@
    padding: 20px;
  }
 
- .cards *{
-  color: black;
-  text-decoration: none;
+ .cards * {
+   color: black;
+   text-decoration: none;
  }
 
  .card {
@@ -123,13 +157,13 @@
    padding: 40px;
  }
 
-.dining-content{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-}
+ .dining-content {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   text-align: center;
+   padding: 20px;
+ }
 
  .activities img,
  .mountain img {
@@ -159,10 +193,10 @@
    width: 250px;
  }
 
-.page-introduction {
-  color: rgb(255, 120, 36);
-  text-align: center;
-}
+ .page-introduction {
+   color: rgb(255, 120, 36);
+   text-align: center;
+ }
 
 
 
@@ -198,6 +232,6 @@
  }
 
  footer img {
-  margin-left: 5rem;
+   margin-left: 5rem;
    height: 8rem;
  }
