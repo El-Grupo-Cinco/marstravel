@@ -12,7 +12,7 @@
 
  /* Header Styles */
  header {
-   display: flex;
+   display: grid;
    justify-content: space-between;
    flex-wrap: wrap;
    align-items: center;
@@ -27,9 +27,9 @@
    height: 6rem;
  }
 
- #logo-text {
+ #header-banner {
    align-items: center;
-   max-width: 80%;
+   object-fit: fill;
    height: auto;
  }
 
