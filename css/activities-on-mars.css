@@ -2,7 +2,6 @@
 .activities-nav {
         margin-top: 1rem;
         padding: 1rem;
-        color: white;
         background: rgb(255, 120, 36);
         ul {
                 min-height: 3rem;
@@ -14,6 +13,10 @@
                 align-items: center;
                 gap: 2rem;
         }
+}
+
+.activities-nav  a {
+        color: white;
 }
 
 .text-on-picture-right {
@@ -34,7 +37,7 @@
                 width: 50%;
                 position: absolute;
                 left: 50%;
-                transform: translate(-2rem, -105%);
+                transform: translate(-3rem, -105%);
                 text-align: center;
                 background-color: rgba(255, 120, 36, 0.50);
                 border-radius: 3rem;
@@ -45,37 +48,6 @@
         h3 {
                 margin: 0.5rem;
         }
-}
-
-@media only screen and (max-width: 1350px) {
-        .text-on-picture-right {
-                
-                width: 100%;
-                padding: 1rem;
-                display: block;
-                color: white;
-        
-                img {
-                        width:100%;
-                        height: auto;
-                }
-        
-                div {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 0.25rem;
-                        width: 100%;
-                        position: static;
-                        left: 50%;
-                        transform: none;
-                        text-align: center;
-                        background-color: rgba(255, 120, 36, 0);
-                        color: rgb(255, 120, 36);
-                        border-radius: 3rem;
-                        padding: 0.5rem;
-                        
-                }
-        }       
 }
 
 .picture-right-of-text {
@@ -96,6 +68,8 @@
 }
 
 .picture-right-of-text > div {
+        margin-top: auto;
+        margin: auto;
         width: 50%;
         text-align: center;
         border-radius: 3rem;
@@ -118,7 +92,7 @@
                 width: 100%;
                 align-self: flex-end;
                 justify-self: end;
-                margin-bottom: 0;                
+                margin-bottom: 0rem;                
         }
 }
 
@@ -197,7 +171,7 @@
         #activities-in-town > div {
                 width: 100;
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 gap: 1rem;
                 align-content: center;
                 justify-content: center;
@@ -211,7 +185,7 @@
         #first-row-in-town {
                 width: fit-content;
                 display: flex;
-                flex-direction: column;
+                flex-direction: column-reverse;
                 align-self: center;
                 justify-content: center;
         
@@ -225,5 +199,71 @@
                 align-self: center;
                 padding-right: 0;
                 margin-top: 0.5rem;
+        }
+
+        
+}
+
+@media only screen and (max-width: 1350px) {
+        .text-on-picture-right {
+                
+                width: 100%;
+                padding: 1rem;
+                display: block;
+                color: white;
+        
+                img {
+                        width:100%;
+                        height: auto;
+                }
+        
+                div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.25rem;
+                        width: 100%;
+                        position: static;
+                        left: 50%;
+                        transform: none;
+                        text-align: center;
+                        background-color: rgba(255, 120, 36, 0);
+                        color: rgb(255, 120, 36);
+                        border-radius: 3rem;
+                        padding: 0.5rem;
+                        
+                }
+        }
+        
+        .picture-right-of-text {
+                width: 100%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column-reverse;
+                
+
+                justify-content: center;
+                align-items: center;
+                color: rgb(255, 120, 36);
+                img {
+                        width: 100%;
+                        max-height: 30rem;
+                        object-fit:cover;
+                        object-position: 50% 40%;
+                }
+        
+                h3 {
+                        margin: 0.5rem;
+                }
+        }
+        
+        .picture-right-of-text > div {
+                width: 100%;
+                text-align: center;
+                border-radius: 3rem;
+                padding: 0.5rem;
+        }
+
+        .picture-with-caption {
+                display: none;
         }
 }
