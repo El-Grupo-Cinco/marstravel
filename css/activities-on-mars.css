@@ -136,11 +136,12 @@
                 flex-direction: column;
         }
         img {
-                width: 50%;
+                width: 48%;
         }       
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 1rem;
         width: auto;
 }
 
