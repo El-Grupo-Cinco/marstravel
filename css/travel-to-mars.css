@@ -1,0 +1,29 @@
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.pods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.food {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.food1 {
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+
+.food2 {
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
