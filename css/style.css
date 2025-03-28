@@ -236,15 +236,18 @@
 
  footer h2 {
    margin-bottom: 0.25rem;
+   color: white;
  }
 
  footer ul {
    list-style: none;
    font-size: small;
+   color: white;
  }
 
  footer ul li {
    margin-bottom: 5px;
+   color: white;
  }
 
  footer img {
