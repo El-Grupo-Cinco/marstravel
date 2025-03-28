@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Audiowide', sans-serif; /* Added fallback generic font family */
+    color: rgb(255, 120, 36); /* Updated text color */
 }
 
 .main-content {
@@ -46,4 +47,22 @@
     display: block;
     margin: 0 auto;
     border-radius: 10px;
+}
+
+/* Override specific elements for better contrast */
+a {
+    color: white; /* Keep links readable */
+    text-decoration: none;
+}
+
+button {
+    background-color: rgb(255, 120, 36);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 120, 36, 0.8);
 }
