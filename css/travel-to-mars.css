@@ -38,11 +38,12 @@
 
 .pod-section.reverse {
     flex-direction: row-reverse;
+    margin-top: 40px;
 }
 
 .pod-section img {
     width: 100%;
-    max-width: 600px;
+    max-width: 590px;
     height: auto;
     border-radius: 10px;
 }
