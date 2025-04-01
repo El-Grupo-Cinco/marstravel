@@ -137,6 +137,10 @@
    border-radius: 10px;
  }
 
+ .discover-mars{
+  color: rgb(255, 120, 36);
+ }
+
  /* ------- CARDS ------- */
  .cards {
    display: grid;
@@ -148,7 +152,7 @@
  }
 
  .cards * {
-   color: black;
+  color: rgb(255, 120, 36);
    text-decoration: none;
  }
 
@@ -178,7 +182,6 @@
    grid-template-columns: repeat(2, 1fr);
    justify-content: center;
    text-align: center;
-   padding: 20px;
  }
 
  .activities img,
