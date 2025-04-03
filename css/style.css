@@ -211,7 +211,8 @@
  }
 
  .review {
-   background: white;
+  color: rgb(199, 199, 199);
+   background: rgb(83, 36, 255);
    padding: 20px;
    border-radius: 10px;
    width: 250px;
